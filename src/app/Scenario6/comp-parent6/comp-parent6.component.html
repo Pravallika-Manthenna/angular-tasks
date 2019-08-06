@@ -1,0 +1,8 @@
+<h2>Scenario6</h2>
+<!-- creating a input text -->
+name:<input #name type="text" >
+<!-- creating a button  -->
+<button (click)="onClick(name.value)"> Submit</button>
+<!-- binding the two sibling components  -->
+<app-compchild6 [parentData]="name.value"></app-compchild6>
+<app-compchild7 [parentData]="name.value"></app-compchild7>
